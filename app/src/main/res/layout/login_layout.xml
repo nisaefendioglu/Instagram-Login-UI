@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:inputType="textPersonName"
+        android:hint="Phone number, username or email"
+        android:textColorHint="#FAFAFA"
+        android:textColor="@color/black"
+        android:maxLines="75"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        android:textColorHint="FAFAFA"
+        android:maxLines="75"
+        android:minLines="7"
+        android:text="Name" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textSize="15dp"
+        android:background="#96E5EF"
+        app:backgroundTint="#96E5EF"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/facebooklogo"
+            android:backgroundTint="@color/blue"
+            app:backgroundTint="#273C75" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with Facebook"
+            android:textColor="#273c75"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Did you forget your password?"
+        app:backgroundTint="#FFFFFF"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:text="Register"
+            android:textColor="#0095f6"
+            app:backgroundTint="#FFFFFF"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="Download the application."
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:weightSum="2">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/appstore"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/googleplay"
+            android:layout_gravity="center"
+            />
+</LinearLayout>
+</LinearLayout>
+
