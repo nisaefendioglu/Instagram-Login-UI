@@ -68,7 +68,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
         android:gravity="center"
         android:weightSum="2">
 
@@ -94,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Did you forget your password?"
+        android:text="Forget password?"
         app:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
         android:textAllCaps="false"
@@ -126,7 +125,7 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:backgroundTint="@color/white"
-            android:text="Register"
+            android:text="Sign up"
             android:textColor="#0095f6"
             app:backgroundTint="#FFFFFF"
             android:textAllCaps="false" />
@@ -138,7 +137,7 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textStyle="normal"
-        android:text="Download the application."
+        android:text="Get the app."
         android:layout_gravity="center"
         android:layout_marginTop="25dp" />
 
