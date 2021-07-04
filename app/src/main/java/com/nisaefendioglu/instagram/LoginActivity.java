@@ -1,6 +1,7 @@
 package com.nisaefendioglu.instagram;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,7 +26,6 @@ public class LoginActivity extends AppCompatActivity {
     EditText userName;
     EditText userPassword;
     TextView errorMessage;
-    TextView footer, footer2 , footer3;
     Button loginButton;
     Button loginButtonFacebook;
     Button forgetPassword;
@@ -54,7 +54,6 @@ public class LoginActivity extends AppCompatActivity {
         appStore = (ImageButton) findViewById(R.id.appStore);
         googlePlayStore = (ImageButton) findViewById(R.id.googlePlayStore);
         instagramLogo = (ImageView)findViewById(R.id.instagramLogo);
-
 
 
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -97,18 +96,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void signUpOnClick(View view) {
         Intent intent = new Intent(this, SignUpLayout.class);
-        startActivity(intent);
-    }
-
-    public void appStoreOnClick(View view) {
-        Uri appStoreLink = Uri.parse("https://apps.apple.com/app/instagram/id389801252?vt=lo");
-        Intent intent = new Intent(Intent.ACTION_VIEW, appStoreLink);
-        startActivity(intent);
-    }
-
-    public void googlePlayStoreOnClick(View view) {
-        Uri googlePlayStoreLink = Uri.parse("https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=DB811887-EF92-4DEB-90EC-D7D119C500A7&utm_content=lo&utm_medium=badge");
-        Intent intent = new Intent(Intent.ACTION_VIEW, googlePlayStoreLink);
         startActivity(intent);
     }
 }

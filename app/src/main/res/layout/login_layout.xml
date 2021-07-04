@@ -43,8 +43,7 @@
         android:hint="Password"
         android:textColorHint="#FF958F8F"
         android:maxLines="75"
-        android:minLines="7"
-        android:text="Name" />
+        android:minLines="7"/>
 
     <Button
         android:id="@+id/loginButton"
@@ -98,6 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
             android:text="Login with Facebook"
             android:textColor="#273c75"
             android:textAllCaps="false"
@@ -143,8 +143,8 @@
             android:onClick="signUpOnClick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:backgroundTint="@color/white"
+            android:background="@android:color/transparent"
             android:text="Sign up"
             android:textColor="#0095f6"
             app:backgroundTint="#FFFFFF"
