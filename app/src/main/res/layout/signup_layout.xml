@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
     tools:context=".SignUpLayout">
 
 
@@ -23,14 +25,15 @@
         android:gravity="center"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:textSize="20dp"
-        android:layout_marginTop="5dp"/>
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginTop="10dp"
         android:weightSum="2">
     <Button
         android:id="@+id/loginButtonFacebook"
@@ -63,11 +66,12 @@
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:ems="15"
         android:layout_gravity="center"
         android:inputType="textPersonName"
         android:hint="Mobile Number or Email"
-        android:textColorHint="#FAFAFA"
+        android:textColorHint="#958F8F"
         android:textColor="@color/black"
         android:maxLines="75"/>
     <EditText
@@ -79,7 +83,7 @@
         android:layout_marginTop="10dp"
         android:inputType="textPersonName"
         android:hint="Full Name"
-        android:textColorHint="#FAFAFA"
+        android:textColorHint="#958F8F"
         android:textColor="@color/black"
         android:maxLines="75"/>
     <EditText
@@ -91,7 +95,7 @@
         android:layout_marginTop="10dp"
         android:inputType="textPersonName"
         android:hint="Username"
-        android:textColorHint="#FAFAFA"
+        android:textColorHint="#958F8F"
         android:textColor="@color/black"
         android:maxLines="75"/>
     <EditText
@@ -103,7 +107,7 @@
         android:layout_marginTop="10dp"
         android:inputType="textPassword"
         android:hint="Password"
-        android:textColorHint="#FAFAFA"
+        android:textColorHint="#958F8F"
         android:textColor="@color/black"
         android:maxLines="75"/>
     <Button
@@ -113,7 +117,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Sign up"
-        android:textSize="10dp"
+        android:textSize="15dp"
         android:background="#96E5EF"
         app:backgroundTint="#96E5EF"
         android:textAllCaps="false"/>
@@ -125,87 +129,38 @@
         android:gravity="center"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:weightSum="2">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Have an account?"
-            android:layout_gravity="center"
             android:backgroundTint="#FFFFFF"
             android:textColor="@color/black"
             android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/loginPageButton"
-            android:onClick="loginOnClick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@android:color/transparent"
             android:backgroundTint="@color/white"
+            android:onClick="loginOnClick"
             android:text="Log in"
+            android:layout_gravity="left"
+            android:textAllCaps="false"
+            android:gravity="left|center_vertical"
             android:textColor="#0095f6"
-            app:backgroundTint="#FFFFFF"
-            android:textAllCaps="false" />
+            app:backgroundTint="#FFFFFF" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textStyle="normal"
-        android:text="Get the app."
-        android:layout_gravity="center" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:weightSum="2">
-        <ImageButton
-            android:id="@+id/appStore"
-            android:onClick="appStoreOnClick"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/appstore"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
-            />
-        <ImageButton
-            android:id="@+id/googlePlayStore"
-            android:onClick="googlePlayStoreOnClick"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/googleplay"
-            android:layout_gravity="center"
-            />
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="About     Blog        Jobs        Help        API     Privacy     Terms"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Top Accounts      Hashtags        Locations"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="© 2021 Instagram from Facebook" />
 
 </LinearLayout>

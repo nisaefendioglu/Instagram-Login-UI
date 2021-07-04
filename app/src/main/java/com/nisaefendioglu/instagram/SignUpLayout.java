@@ -21,7 +21,6 @@ public class SignUpLayout extends AppCompatActivity {
 
     EditText email, fullName, userName, userPassword;
     Button loginButtonFacebook, signUp, loginPageButton;
-    ImageButton appStore, googlePlayStore;
 
     FirebaseDatabase firebaseDatabase;
     FirebaseAuth firebaseAuth;
@@ -42,8 +41,6 @@ public class SignUpLayout extends AppCompatActivity {
         signUp = (Button)findViewById(R.id.signUp);
         loginPageButton = (Button)findViewById(R.id.loginPageButton);
 
-        appStore = (ImageButton)findViewById(R.id.appStore);
-        googlePlayStore = (ImageButton)findViewById(R.id.googlePlayStore);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();

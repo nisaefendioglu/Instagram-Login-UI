@@ -30,8 +30,6 @@ public class LoginActivity extends AppCompatActivity {
     Button loginButtonFacebook;
     Button forgetPassword;
     Button signUp;
-    ImageButton appStore;
-    ImageButton googlePlayStore;
     ImageView instagramLogo;
 
 
@@ -51,8 +49,6 @@ public class LoginActivity extends AppCompatActivity {
         loginButtonFacebook = (Button) findViewById(R.id.loginButtonFacebook);
         forgetPassword = (Button) findViewById(R.id.forgetPassword);
         signUp = (Button) findViewById(R.id.signUp);
-        appStore = (ImageButton) findViewById(R.id.appStore);
-        googlePlayStore = (ImageButton) findViewById(R.id.googlePlayStore);
         instagramLogo = (ImageView)findViewById(R.id.instagramLogo);
 
 
